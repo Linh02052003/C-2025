@@ -1,0 +1,83 @@
+﻿@model BanSach.Models.KHACHHANG
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Chi tiết khách hàng</h2>
+
+<div class="container emp-profile mt-4">
+    <div class="row">
+        
+        <div class="col-md-6">
+            <div class="profile-head">
+                <h5>
+                    @Html.DisplayFor(model => model.HoTen)
+                </h5>
+                <h6>
+                    @Html.DisplayFor(model => model.Email)
+                </h6>
+                
+
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="tab-content profile-tab" id="myTabContent">
+                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label>Số Điện Thoại</label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p>
+                                            @{
+                                                var sdt = Model.SoDienThoai ?? "Chưa Cập Nhật";
+                                            }
+                                        <p>@sdt</p>
+
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label>Địa Chỉ</label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        @{
+                                            var diachi = Model.DiaChiNH ?? "Chưa Cập Nhật";
+                                        }
+                                        <p>@diachi</p>
+
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label>Ngày Sinh</label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        @{
+                                            var ngaySinh = Model.NgaySinh?.ToString("dd/MM/yyyy") ?? "Chưa Cập Nhật";
+                                        }
+                                        <p>@ngaySinh</p>
+
+
+                                    </div>
+                                </div>
+
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p>
+            @Html.ActionLink("Trở về", "Index") |
+            @Html.ActionLink("Chỉnh sửa", "Edit", new { id = Model.MaKH })
+
+        </p>
+    </div>
+</div>
+

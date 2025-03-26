@@ -1,0 +1,53 @@
+﻿@model IEnumerable<BanSach.Models.NHAXUATBAN>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+
+<button>
+   
+</button>
+<div class="container-fluid px-4">
+    <br />
+    <h2>Danh sách nhà xuất bản</h2>
+
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="my-3 flex">
+                @Html.ActionLink("Add NXB", "Create", null, new { @class = "btn btn-primary" })
+                <a href="@Url.Action("ExportToExcel", "NHAXUATBANs")" class="btn btn-primary">Xuất sang file excel</a>
+            </div>
+        </div>
+    </div>
+    <table class="table">
+        <tr>
+            <th>
+                Tên Nhà xuất bản
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DiaChi)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TenNXB)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DiaChi)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.MaNXB }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.MaNXB }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.MaNXB })
+                    
+                </td>
+            </tr>
+        }
+
+    </table>

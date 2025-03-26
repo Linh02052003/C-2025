@@ -1,0 +1,96 @@
+﻿CREATE DATABASE QLBansach
+
+
+--TẠo bảng chức vụ
+CREATE TABLE ChucVu(
+	MaCV NVARCHAR(50) PRIMARY KEY,
+	TenCV NVARCHAR(50),
+);
+-- Tạo bảng Admin
+CREATE TABLE Admin (
+	MaAdmin NVARCHAR(50) PRIMARY KEY,
+    UserAdmin VARCHAR(50) ,
+    PassAdmin VARCHAR(50),
+    Hoten NVARCHAR(100),
+	MaCV NVARCHAR(50),
+	FOREIGN KEY (MaCV) REFERENCES ChucVu(MaCV)
+);
+
+-- Tạo bảng KHACHHANG
+CREATE TABLE KHACHHANG (
+    MaKH NVARCHAR(50) PRIMARY KEY,
+    HoTen NVARCHAR(100),
+	GioiTinh Bit,
+    SoDienThoai VARCHAR(15),
+    MatKhau VARCHAR(50),
+    Email VARCHAR(100),
+    DiaChiNH NVARCHAR(255),
+    NgaySinh DATE
+);
+
+-- Tạo bảng NHIAXUATBAN
+CREATE TABLE NHAXUATBAN (
+    MaNXB NVARCHAR(50) PRIMARY KEY,
+    TenNXB NVARCHAR(255),
+    DiaChi NVARCHAR(255)
+);
+
+-- Tạo bảng LOAI (Loại sách)
+CREATE TABLE LOAI (
+    MaLoai NVARCHAR(50) PRIMARY KEY,
+    TenLoai NVARCHAR(100)
+);
+
+-- Tạo bảng SACH
+CREATE TABLE SACH (
+    Masach NVARCHAR(50) PRIMARY KEY,
+    Tensach NVARCHAR(255),
+    Giaban DECIMAL(10,2),
+    MoTa NVARCHAR(1000),
+    MaNXB NVARCHAR(50),
+    NgayNhapHang DATE,
+    SoLuongTon INT,
+    MaLoai NVARCHAR(50),
+    FOREIGN KEY (MaNXB) REFERENCES NHAXUATBAN(MaNXB),
+    FOREIGN KEY (MaLoai) REFERENCES LOAI(MaLoai)
+);
+
+-- Tạo bảng TACGIA
+CREATE TABLE TACGIA (
+    MaTG NVARCHAR(50) PRIMARY KEY,
+    TenTG NVARCHAR(255),
+    DiaChi NVARCHAR(255),
+    TieuSu NVARCHAR(1000),
+    DienThoai VARCHAR(15)
+);
+
+-- Tạo bảng VIETSACH (Liên kết sách và tác giả)
+CREATE TABLE VIETSACH (
+    MaTG NVARCHAR(50),
+    Masach NVARCHAR(50),
+    VaiTro NVARCHAR(100),
+    PRIMARY KEY (MaTG, Masach),
+    FOREIGN KEY (MaTG) REFERENCES TACGIA(MaTG),
+    FOREIGN KEY (Masach) REFERENCES SACH(Masach)
+);
+
+-- Tạo bảng DONDATHANG
+CREATE TABLE DONDATHANG (
+    MaDonHang NVARCHAR(50) PRIMARY KEY,
+    MaKH NVARCHAR(50),
+    ThoiGianGiaoHang DATETIME,
+    NgayDat DATE,
+    TrangThai NVARCHAR(50),
+    FOREIGN KEY (MaKH) REFERENCES KHACHHANG(MaKH)
+);
+
+-- Tạo bảng CHITIETDONHANG
+CREATE TABLE CHITIETDONHANG (
+    MaDonHang NVARCHAR(50),
+    Masach NVARCHAR(50),
+    Soluong INT,
+    Dongia DECIMAL(10,2),
+    PRIMARY KEY (MaDonHang, Masach),
+    FOREIGN KEY (MaDonHang) REFERENCES DONDATHANG(MaDonHang),
+    FOREIGN KEY (Masach) REFERENCES SACH(Masach)
+);
