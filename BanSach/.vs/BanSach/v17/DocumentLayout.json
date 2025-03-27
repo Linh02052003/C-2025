@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "D:\\C\u01102025\\BanSach\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9D0E5532-AADB-46F3-A355-749140990DD5}|BanSach\\BanSach.csproj|d:\\c\u01112025\\bansach\\bansach\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "AbsoluteMoniker": "D:0:0:{9D0E5532-AADB-46F3-A355-749140990DD5}|BanSach\\BanSach.csproj|d:\\c\u01112025\\bansach\\bansach\\areas\\admin\\views\\shared\\_layoutadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9D0E5532-AADB-46F3-A355-749140990DD5}|BanSach\\BanSach.csproj|solutionrelative:bansach\\areas\\admin\\views\\shared\\_layoutadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D0E5532-AADB-46F3-A355-749140990DD5}|BanSach\\BanSach.csproj|d:\\c\u01112025\\bansach\\bansach\\areas\\admin\\views\\khachhangs\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9D0E5532-AADB-46F3-A355-749140990DD5}|BanSach\\BanSach.csproj|solutionrelative:bansach\\areas\\admin\\views\\khachhangs\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D0E5532-AADB-46F3-A355-749140990DD5}|BanSach\\BanSach.csproj|D:\\C\u01102025\\BanSach\\bansach\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{9D0E5532-AADB-46F3-A355-749140990DD5}|BanSach\\BanSach.csproj|solutionrelative:bansach\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9D0E5532-AADB-46F3-A355-749140990DD5}|BanSach\\BanSach.csproj|d:\\c\u01112025\\bansach\\bansach\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9D0E5532-AADB-46F3-A355-749140990DD5}|BanSach\\BanSach.csproj|D:\\C\u01102025\\BanSach\\bansach\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9D0E5532-AADB-46F3-A355-749140990DD5}|BanSach\\BanSach.csproj|solutionrelative:bansach\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9D0E5532-AADB-46F3-A355-749140990DD5}|BanSach\\BanSach.csproj|d:\\c\u01112025\\bansach\\bansach\\areas\\admin\\views\\shared\\_layoutadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9D0E5532-AADB-46F3-A355-749140990DD5}|BanSach\\BanSach.csproj|solutionrelative:bansach\\areas\\admin\\views\\shared\\_layoutadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,11 +26,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\C\u01102025\\BanSach\\BanSach\\Areas\\Admin\\Views\\KHACHHANGs\\Index.cshtml",
+              "RelativeDocumentMoniker": "BanSach\\Areas\\Admin\\Views\\KHACHHANGs\\Index.cshtml",
+              "ToolTip": "D:\\C\u01102025\\BanSach\\BanSach\\Areas\\Admin\\Views\\KHACHHANGs\\Index.cshtml",
+              "RelativeToolTip": "BanSach\\Areas\\Admin\\Views\\KHACHHANGs\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-27T05:04:55.72Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Global.asax.cs",
               "DocumentMoniker": "D:\\C\u01102025\\BanSach\\BanSach\\Global.asax.cs",
               "RelativeDocumentMoniker": "BanSach\\Global.asax.cs",
@@ -34,12 +51,11 @@
               "RelativeToolTip": "BanSach\\Global.asax.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T07:17:51.665Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-26T07:17:51.665Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "packages.config",
               "DocumentMoniker": "D:\\C\u01102025\\BanSach\\BanSach\\packages.config",
               "RelativeDocumentMoniker": "BanSach\\packages.config",
@@ -47,18 +63,17 @@
               "RelativeToolTip": "BanSach\\packages.config",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-03-26T07:17:42.373Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-26T07:17:42.373Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "_LayoutAdmin.cshtml",
               "DocumentMoniker": "D:\\C\u01102025\\BanSach\\BanSach\\Areas\\Admin\\Views\\Shared\\_LayoutAdmin.cshtml",
               "RelativeDocumentMoniker": "BanSach\\Areas\\Admin\\Views\\Shared\\_LayoutAdmin.cshtml",
               "ToolTip": "D:\\C\u01102025\\BanSach\\BanSach\\Areas\\Admin\\Views\\Shared\\_LayoutAdmin.cshtml",
               "RelativeToolTip": "BanSach\\Areas\\Admin\\Views\\Shared\\_LayoutAdmin.cshtml",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAsAAAA6AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-03-26T07:13:24.892Z",
               "EditorCaption": ""
