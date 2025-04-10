@@ -1,6 +1,6 @@
 ﻿using System.Web.Mvc;
 
-namespace BanSach.Areas.Admin
+namespace banSach.Areas.Admin
 {
     public class AdminAreaRegistration : AreaRegistration 
     {
@@ -17,7 +17,7 @@ namespace BanSach.Areas.Admin
             context.MapRoute(
                 "Admin_default",
                 "Admin/{controller}/{action}/{id}",
-                new { Controller = "Admin", action = "Index", id = UrlParameter.Optional }
+                new { Controller="HomeAdmin", action = "Index", id = UrlParameter.Optional }
             );
         }
     }

@@ -7,22 +7,21 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace BanSach.Models
+namespace banSach.Models
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class KHACHHANG
+    public partial class KhachHang
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public KHACHHANG()
+        public KhachHang()
         {
-            this.DONDATHANGs = new HashSet<DONDATHANG>();
+            this.DonDatHangs = new HashSet<DonDatHang>();
         }
     
         public string MaKH { get; set; }
         public string HoTen { get; set; }
-        public Nullable<bool> GioiTinh { get; set; }
         public string SoDienThoai { get; set; }
         public string MatKhau { get; set; }
         public string Email { get; set; }
@@ -30,6 +29,6 @@ namespace BanSach.Models
         public Nullable<System.DateTime> NgaySinh { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<DONDATHANG> DONDATHANGs { get; set; }
+        public virtual ICollection<DonDatHang> DonDatHangs { get; set; }
     }
 }

@@ -7,23 +7,24 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace BanSach.Models
+namespace banSach.Models
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class SACH
+    public partial class Sach
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public SACH()
+        public Sach()
         {
-            this.CHITIETDONHANGs = new HashSet<CHITIETDONHANG>();
-            this.VIETSACHes = new HashSet<VIETSACH>();
+            this.ChiTietDonHangs = new HashSet<ChiTietDonHang>();
+            this.VietSaches = new HashSet<VietSach>();
         }
     
-        public string Masach { get; set; }
-        public string Tensach { get; set; }
-        public Nullable<decimal> Giaban { get; set; }
+        public string MaSach { get; set; }
+        public string TenSach { get; set; }
+        public string Hinh { get; set; }
+        public Nullable<decimal> GiaBan { get; set; }
         public string MoTa { get; set; }
         public string MaNXB { get; set; }
         public Nullable<System.DateTime> NgayNhapHang { get; set; }
@@ -31,10 +32,10 @@ namespace BanSach.Models
         public string MaLoai { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<CHITIETDONHANG> CHITIETDONHANGs { get; set; }
-        public virtual LOAI LOAI { get; set; }
-        public virtual NHAXUATBAN NHAXUATBAN { get; set; }
+        public virtual ICollection<ChiTietDonHang> ChiTietDonHangs { get; set; }
+        public virtual Loai Loai { get; set; }
+        public virtual NhaXuatBan NhaXuatBan { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<VIETSACH> VIETSACHes { get; set; }
+        public virtual ICollection<VietSach> VietSaches { get; set; }
     }
 }

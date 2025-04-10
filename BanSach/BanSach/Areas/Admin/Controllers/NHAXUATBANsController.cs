@@ -3,115 +3,130 @@ using System.Collections.Generic;
 using System.Data;
 using System.Data.Entity;
 using System.Linq;
+using System.Threading.Tasks;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
-using BanSach.Models;
+using banSach.Models;
 
-namespace BanSach.Areas.Admin.Controllers
+namespace bansach.Areas.Admin.Controllers
 {
-    public class NHAXUATBANsController : Controller
+    public class NhaXuatBansController : Controller
     {
         private QLBanSachEntities db = new QLBanSachEntities();
 
-        // GET: Admin/NHAXUATBANs
-        public ActionResult Index()
+        // GET: Admin/NhaXuatBans
+        public async Task<ActionResult> Index()
         {
-            return View(db.NHAXUATBANs.ToList());
+            return View(await db.NhaXuatBans.ToListAsync());
         }
 
-        // GET: Admin/NHAXUATBANs/Details/5
-        public ActionResult Details(string id)
+        // GET: Admin/NhaXuatBans/Details/5
+        public async Task<ActionResult> Details(string id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            NHAXUATBAN nHAXUATBAN = db.NHAXUATBANs.Find(id);
-            if (nHAXUATBAN == null)
+            NhaXuatBan nhaXuatBan = await db.NhaXuatBans.FindAsync(id);
+            if (nhaXuatBan == null)
             {
                 return HttpNotFound();
             }
-            return View(nHAXUATBAN);
+            return View(nhaXuatBan);
         }
 
-        // GET: Admin/NHAXUATBANs/Create
+        // GET: Admin/NhaXuatBans/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: Admin/NHAXUATBANs/Create
+        // POST: Admin/NhaXuatBans/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "MaNXB,TenNXB,DiaChi")] NHAXUATBAN nHAXUATBAN)
+        public async Task<ActionResult> Create([Bind(Include = "TenNXB,DiaChi")] NhaXuatBan nhaXuatBan)
         {
             if (ModelState.IsValid)
             {
-                db.NHAXUATBANs.Add(nHAXUATBAN);
-                db.SaveChanges();
+                // Tạo mã NXB tự động
+                var lastNXB = db.NhaXuatBans.OrderByDescending(n => n.MaNXB).FirstOrDefault();
+                string newMaNXB = "NXB001";
+
+                if (lastNXB != null)
+                {
+                    string lastMa = lastNXB.MaNXB.Replace("NXB", "");
+                    int so = int.Parse(lastMa) + 1;
+                    newMaNXB = "NXB" + so.ToString("D3");
+                }
+
+                nhaXuatBan.MaNXB = newMaNXB;
+
+                db.NhaXuatBans.Add(nhaXuatBan);
+                await db.SaveChangesAsync();
                 return RedirectToAction("Index");
             }
 
-            return View(nHAXUATBAN);
+            return View(nhaXuatBan);
         }
 
-        // GET: Admin/NHAXUATBANs/Edit/5
-        public ActionResult Edit(string id)
+
+        // GET: Admin/NhaXuatBans/Edit/5
+        public async Task<ActionResult> Edit(string id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            NHAXUATBAN nHAXUATBAN = db.NHAXUATBANs.Find(id);
-            if (nHAXUATBAN == null)
+            NhaXuatBan nhaXuatBan = await db.NhaXuatBans.FindAsync(id);
+            if (nhaXuatBan == null)
             {
                 return HttpNotFound();
             }
-            return View(nHAXUATBAN);
+            return View(nhaXuatBan);
         }
 
-        // POST: Admin/NHAXUATBANs/Edit/5
+        // POST: Admin/NhaXuatBans/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "MaNXB,TenNXB,DiaChi")] NHAXUATBAN nHAXUATBAN)
+        public async Task<ActionResult> Edit([Bind(Include = "MaNXB,TenNXB,DiaChi")] NhaXuatBan nhaXuatBan)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(nHAXUATBAN).State = EntityState.Modified;
-                db.SaveChanges();
+                db.Entry(nhaXuatBan).State = EntityState.Modified;
+                await db.SaveChangesAsync();
                 return RedirectToAction("Index");
             }
-            return View(nHAXUATBAN);
+            return View(nhaXuatBan);
         }
 
-        // GET: Admin/NHAXUATBANs/Delete/5
-        public ActionResult Delete(string id)
+        // GET: Admin/NhaXuatBans/Delete/5
+        public async Task<ActionResult> Delete(string id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            NHAXUATBAN nHAXUATBAN = db.NHAXUATBANs.Find(id);
-            if (nHAXUATBAN == null)
+            NhaXuatBan nhaXuatBan = await db.NhaXuatBans.FindAsync(id);
+            if (nhaXuatBan == null)
             {
                 return HttpNotFound();
             }
-            return View(nHAXUATBAN);
+            return View(nhaXuatBan);
         }
 
-        // POST: Admin/NHAXUATBANs/Delete/5
+        // POST: Admin/NhaXuatBans/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public ActionResult DeleteConfirmed(string id)
+        public async Task<ActionResult> DeleteConfirmed(string id)
         {
-            NHAXUATBAN nHAXUATBAN = db.NHAXUATBANs.Find(id);
-            db.NHAXUATBANs.Remove(nHAXUATBAN);
-            db.SaveChanges();
+            NhaXuatBan nhaXuatBan = await db.NhaXuatBans.FindAsync(id);
+            db.NhaXuatBans.Remove(nhaXuatBan);
+            await db.SaveChangesAsync();
             return RedirectToAction("Index");
         }
 

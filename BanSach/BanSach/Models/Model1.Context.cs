@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace BanSach.Models
+namespace banSach.Models
 {
     using System;
     using System.Data.Entity;
@@ -25,15 +25,16 @@ namespace BanSach.Models
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<Admin> Admins { get; set; }
-        public virtual DbSet<CHITIETDONHANG> CHITIETDONHANGs { get; set; }
+        public virtual DbSet<ChiTietDonHang> ChiTietDonHangs { get; set; }
         public virtual DbSet<ChucVu> ChucVus { get; set; }
-        public virtual DbSet<DONDATHANG> DONDATHANGs { get; set; }
-        public virtual DbSet<KHACHHANG> KHACHHANGs { get; set; }
-        public virtual DbSet<LOAI> LOAIs { get; set; }
-        public virtual DbSet<NHAXUATBAN> NHAXUATBANs { get; set; }
-        public virtual DbSet<SACH> SACHes { get; set; }
-        public virtual DbSet<TACGIA> TACGIAs { get; set; }
-        public virtual DbSet<VIETSACH> VIETSACHes { get; set; }
+        public virtual DbSet<DonDatHang> DonDatHangs { get; set; }
+        public virtual DbSet<KhachHang> KhachHangs { get; set; }
+        public virtual DbSet<Loai> Loais { get; set; }
+        public virtual DbSet<NhanVien> NhanViens { get; set; }
+        public virtual DbSet<NhaXuatBan> NhaXuatBans { get; set; }
+        public virtual DbSet<Sach> Saches { get; set; }
+        public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
+        public virtual DbSet<TacGia> TacGias { get; set; }
+        public virtual DbSet<VietSach> VietSaches { get; set; }
     }
 }

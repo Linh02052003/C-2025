@@ -1,30 +1,86 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\C\u01102025\\BanSach\\",
+  "WorkspaceRootPath": "D:\\C\u01102025\\banSach\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9D0E5532-AADB-46F3-A355-749140990DD5}|BanSach\\BanSach.csproj|d:\\c\u01112025\\bansach\\bansach\\areas\\admin\\views\\tacgias\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9D0E5532-AADB-46F3-A355-749140990DD5}|BanSach\\BanSach.csproj|solutionrelative:bansach\\areas\\admin\\views\\tacgias\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{3CBE1BEF-1D5B-4B6E-A11A-D0B467109993}|banSach\\banSach.csproj|d:\\c\u01112025\\bansach\\bansach\\areas\\admin\\views\\sachs\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3CBE1BEF-1D5B-4B6E-A11A-D0B467109993}|banSach\\banSach.csproj|solutionrelative:bansach\\areas\\admin\\views\\sachs\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9D0E5532-AADB-46F3-A355-749140990DD5}|BanSach\\BanSach.csproj|D:\\C\u01102025\\BanSach\\bansach\\models\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
-      "RelativeMoniker": "D:0:0:{9D0E5532-AADB-46F3-A355-749140990DD5}|BanSach\\BanSach.csproj|solutionrelative:bansach\\models\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+      "AbsoluteMoniker": "D:0:0:{3CBE1BEF-1D5B-4B6E-A11A-D0B467109993}|banSach\\banSach.csproj|d:\\c\u01112025\\bansach\\bansach\\areas\\admin\\views\\sachs\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3CBE1BEF-1D5B-4B6E-A11A-D0B467109993}|banSach\\banSach.csproj|solutionrelative:bansach\\areas\\admin\\views\\sachs\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9D0E5532-AADB-46F3-A355-749140990DD5}|BanSach\\BanSach.csproj|D:\\C\u01102025\\BanSach\\bansach\\areas\\admin\\views\\tacgias\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9D0E5532-AADB-46F3-A355-749140990DD5}|BanSach\\BanSach.csproj|solutionrelative:bansach\\areas\\admin\\views\\tacgias\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{3CBE1BEF-1D5B-4B6E-A11A-D0B467109993}|banSach\\banSach.csproj|d:\\c\u01112025\\bansach\\bansach\\areas\\admin\\views\\sachs\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3CBE1BEF-1D5B-4B6E-A11A-D0B467109993}|banSach\\banSach.csproj|solutionrelative:bansach\\areas\\admin\\views\\sachs\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9D0E5532-AADB-46F3-A355-749140990DD5}|BanSach\\BanSach.csproj|D:\\C\u01102025\\BanSach\\bansach\\areas\\admin\\views\\tacgias\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9D0E5532-AADB-46F3-A355-749140990DD5}|BanSach\\BanSach.csproj|solutionrelative:bansach\\areas\\admin\\views\\tacgias\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{3CBE1BEF-1D5B-4B6E-A11A-D0B467109993}|banSach\\banSach.csproj|d:\\c\u01112025\\bansach\\bansach\\areas\\admin\\views\\sachs\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3CBE1BEF-1D5B-4B6E-A11A-D0B467109993}|banSach\\banSach.csproj|solutionrelative:bansach\\areas\\admin\\views\\sachs\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9D0E5532-AADB-46F3-A355-749140990DD5}|BanSach\\BanSach.csproj|D:\\C\u01102025\\BanSach\\bansach\\areas\\admin\\controllers\\tacgiascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9D0E5532-AADB-46F3-A355-749140990DD5}|BanSach\\BanSach.csproj|solutionrelative:bansach\\areas\\admin\\controllers\\tacgiascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3CBE1BEF-1D5B-4B6E-A11A-D0B467109993}|banSach\\banSach.csproj|d:\\c\u01112025\\bansach\\bansach\\areas\\admin\\views\\sachs\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3CBE1BEF-1D5B-4B6E-A11A-D0B467109993}|banSach\\banSach.csproj|solutionrelative:bansach\\areas\\admin\\views\\sachs\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9D0E5532-AADB-46F3-A355-749140990DD5}|BanSach\\BanSach.csproj|D:\\C\u01102025\\BanSach\\bansach\\areas\\admin\\views\\tacgias\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9D0E5532-AADB-46F3-A355-749140990DD5}|BanSach\\BanSach.csproj|solutionrelative:bansach\\areas\\admin\\views\\tacgias\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{3CBE1BEF-1D5B-4B6E-A11A-D0B467109993}|banSach\\banSach.csproj|d:\\c\u01112025\\bansach\\bansach\\areas\\admin\\views\\nhaxuatbans\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3CBE1BEF-1D5B-4B6E-A11A-D0B467109993}|banSach\\banSach.csproj|solutionrelative:bansach\\areas\\admin\\views\\nhaxuatbans\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CBE1BEF-1D5B-4B6E-A11A-D0B467109993}|banSach\\banSach.csproj|d:\\c\u01112025\\bansach\\bansach\\areas\\admin\\views\\nhaxuatbans\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3CBE1BEF-1D5B-4B6E-A11A-D0B467109993}|banSach\\banSach.csproj|solutionrelative:bansach\\areas\\admin\\views\\nhaxuatbans\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CBE1BEF-1D5B-4B6E-A11A-D0B467109993}|banSach\\banSach.csproj|d:\\c\u01112025\\bansach\\bansach\\areas\\admin\\views\\nhaxuatbans\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3CBE1BEF-1D5B-4B6E-A11A-D0B467109993}|banSach\\banSach.csproj|solutionrelative:bansach\\areas\\admin\\views\\nhaxuatbans\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CBE1BEF-1D5B-4B6E-A11A-D0B467109993}|banSach\\banSach.csproj|d:\\c\u01112025\\bansach\\bansach\\areas\\admin\\views\\nhaxuatbans\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3CBE1BEF-1D5B-4B6E-A11A-D0B467109993}|banSach\\banSach.csproj|solutionrelative:bansach\\areas\\admin\\views\\nhaxuatbans\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CBE1BEF-1D5B-4B6E-A11A-D0B467109993}|banSach\\banSach.csproj|d:\\c\u01112025\\bansach\\bansach\\areas\\admin\\views\\nhaxuatbans\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3CBE1BEF-1D5B-4B6E-A11A-D0B467109993}|banSach\\banSach.csproj|solutionrelative:bansach\\areas\\admin\\views\\nhaxuatbans\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CBE1BEF-1D5B-4B6E-A11A-D0B467109993}|banSach\\banSach.csproj|d:\\c\u01112025\\bansach\\bansach\\areas\\admin\\views\\nhanviens\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3CBE1BEF-1D5B-4B6E-A11A-D0B467109993}|banSach\\banSach.csproj|solutionrelative:bansach\\areas\\admin\\views\\nhanviens\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CBE1BEF-1D5B-4B6E-A11A-D0B467109993}|banSach\\banSach.csproj|d:\\c\u01112025\\bansach\\bansach\\areas\\admin\\views\\nhanviens\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3CBE1BEF-1D5B-4B6E-A11A-D0B467109993}|banSach\\banSach.csproj|solutionrelative:bansach\\areas\\admin\\views\\nhanviens\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CBE1BEF-1D5B-4B6E-A11A-D0B467109993}|banSach\\banSach.csproj|d:\\c\u01112025\\bansach\\bansach\\areas\\admin\\views\\nhanviens\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3CBE1BEF-1D5B-4B6E-A11A-D0B467109993}|banSach\\banSach.csproj|solutionrelative:bansach\\areas\\admin\\views\\nhanviens\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CBE1BEF-1D5B-4B6E-A11A-D0B467109993}|banSach\\banSach.csproj|d:\\c\u01112025\\bansach\\bansach\\areas\\admin\\views\\nhanviens\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3CBE1BEF-1D5B-4B6E-A11A-D0B467109993}|banSach\\banSach.csproj|solutionrelative:bansach\\areas\\admin\\views\\nhanviens\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CBE1BEF-1D5B-4B6E-A11A-D0B467109993}|banSach\\banSach.csproj|d:\\c\u01112025\\bansach\\bansach\\areas\\admin\\views\\nhanviens\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3CBE1BEF-1D5B-4B6E-A11A-D0B467109993}|banSach\\banSach.csproj|solutionrelative:bansach\\areas\\admin\\views\\nhanviens\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CBE1BEF-1D5B-4B6E-A11A-D0B467109993}|banSach\\banSach.csproj|d:\\c\u01112025\\bansach\\bansach\\areas\\admin\\views\\loais\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3CBE1BEF-1D5B-4B6E-A11A-D0B467109993}|banSach\\banSach.csproj|solutionrelative:bansach\\areas\\admin\\views\\loais\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CBE1BEF-1D5B-4B6E-A11A-D0B467109993}|banSach\\banSach.csproj|d:\\c\u01112025\\bansach\\bansach\\areas\\admin\\views\\loais\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3CBE1BEF-1D5B-4B6E-A11A-D0B467109993}|banSach\\banSach.csproj|solutionrelative:bansach\\areas\\admin\\views\\loais\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CBE1BEF-1D5B-4B6E-A11A-D0B467109993}|banSach\\banSach.csproj|d:\\c\u01112025\\bansach\\bansach\\areas\\admin\\views\\loais\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3CBE1BEF-1D5B-4B6E-A11A-D0B467109993}|banSach\\banSach.csproj|solutionrelative:bansach\\areas\\admin\\views\\loais\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CBE1BEF-1D5B-4B6E-A11A-D0B467109993}|banSach\\banSach.csproj|d:\\c\u01112025\\bansach\\bansach\\areas\\admin\\views\\loais\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3CBE1BEF-1D5B-4B6E-A11A-D0B467109993}|banSach\\banSach.csproj|solutionrelative:bansach\\areas\\admin\\views\\loais\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CBE1BEF-1D5B-4B6E-A11A-D0B467109993}|banSach\\banSach.csproj|d:\\c\u01112025\\bansach\\bansach\\areas\\admin\\views\\loais\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3CBE1BEF-1D5B-4B6E-A11A-D0B467109993}|banSach\\banSach.csproj|solutionrelative:bansach\\areas\\admin\\views\\loais\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,75 +94,263 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "D:\\C\u01102025\\BanSach\\BanSach\\Areas\\Admin\\Views\\TACGIAs\\Create.cshtml",
-              "RelativeDocumentMoniker": "BanSach\\Areas\\Admin\\Views\\TACGIAs\\Create.cshtml",
-              "ToolTip": "D:\\C\u01102025\\BanSach\\BanSach\\Areas\\Admin\\Views\\TACGIAs\\Create.cshtml",
-              "RelativeToolTip": "BanSach\\Areas\\Admin\\Views\\TACGIAs\\Create.cshtml",
-              "ViewState": "AgIAADMAAAAAAAAAAAAAADkAAAAcAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\C\u01102025\\banSach\\banSach\\Areas\\Admin\\Views\\Sachs\\Index.cshtml",
+              "RelativeDocumentMoniker": "banSach\\Areas\\Admin\\Views\\Sachs\\Index.cshtml",
+              "ToolTip": "D:\\C\u01102025\\banSach\\banSach\\Areas\\Admin\\Views\\Sachs\\Index.cshtml",
+              "RelativeToolTip": "banSach\\Areas\\Admin\\Views\\Sachs\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-04T08:31:40.061Z"
+              "WhenOpened": "2025-04-10T15:27:23.096Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Delete.cshtml",
-              "DocumentMoniker": "D:\\C\u01102025\\BanSach\\BanSach\\Areas\\Admin\\Views\\TACGIAs\\Delete.cshtml",
-              "RelativeDocumentMoniker": "BanSach\\Areas\\Admin\\Views\\TACGIAs\\Delete.cshtml",
-              "ToolTip": "D:\\C\u01102025\\BanSach\\BanSach\\Areas\\Admin\\Views\\TACGIAs\\Delete.cshtml",
-              "RelativeToolTip": "BanSach\\Areas\\Admin\\Views\\TACGIAs\\Delete.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAA5AAAAAAAAAA==",
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\C\u01102025\\banSach\\banSach\\Areas\\Admin\\Views\\Sachs\\Edit.cshtml",
+              "RelativeDocumentMoniker": "banSach\\Areas\\Admin\\Views\\Sachs\\Edit.cshtml",
+              "ToolTip": "D:\\C\u01102025\\banSach\\banSach\\Areas\\Admin\\Views\\Sachs\\Edit.cshtml",
+              "RelativeToolTip": "banSach\\Areas\\Admin\\Views\\Sachs\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-04T08:31:35.281Z"
+              "WhenOpened": "2025-04-10T15:27:17.679Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "D:\\C\u01102025\\BanSach\\BanSach\\Areas\\Admin\\Views\\TACGIAs\\Edit.cshtml",
-              "RelativeDocumentMoniker": "BanSach\\Areas\\Admin\\Views\\TACGIAs\\Edit.cshtml",
-              "ToolTip": "D:\\C\u01102025\\BanSach\\BanSach\\Areas\\Admin\\Views\\TACGIAs\\Edit.cshtml",
-              "RelativeToolTip": "BanSach\\Areas\\Admin\\Views\\TACGIAs\\Edit.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAZAAAAAAAAAA==",
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\C\u01102025\\banSach\\banSach\\Areas\\Admin\\Views\\Sachs\\Details.cshtml",
+              "RelativeDocumentMoniker": "banSach\\Areas\\Admin\\Views\\Sachs\\Details.cshtml",
+              "ToolTip": "D:\\C\u01102025\\banSach\\banSach\\Areas\\Admin\\Views\\Sachs\\Details.cshtml",
+              "RelativeToolTip": "banSach\\Areas\\Admin\\Views\\Sachs\\Details.cshtml",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAAAAAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-04T08:31:06.453Z",
+              "WhenOpened": "2025-04-10T15:27:14.352Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\C\u01102025\\banSach\\banSach\\Areas\\Admin\\Views\\Sachs\\Delete.cshtml",
+              "RelativeDocumentMoniker": "banSach\\Areas\\Admin\\Views\\Sachs\\Delete.cshtml",
+              "ToolTip": "D:\\C\u01102025\\banSach\\banSach\\Areas\\Admin\\Views\\Sachs\\Delete.cshtml",
+              "RelativeToolTip": "banSach\\Areas\\Admin\\Views\\Sachs\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-10T15:27:09.279Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\C\u01102025\\banSach\\banSach\\Areas\\Admin\\Views\\Sachs\\Create.cshtml",
+              "RelativeDocumentMoniker": "banSach\\Areas\\Admin\\Views\\Sachs\\Create.cshtml",
+              "ToolTip": "D:\\C\u01102025\\banSach\\banSach\\Areas\\Admin\\Views\\Sachs\\Create.cshtml",
+              "RelativeToolTip": "banSach\\Areas\\Admin\\Views\\Sachs\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-10T15:27:05.645Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\C\u01102025\\BanSach\\BanSach\\Areas\\Admin\\Views\\TACGIAs\\Index.cshtml",
-              "RelativeDocumentMoniker": "BanSach\\Areas\\Admin\\Views\\TACGIAs\\Index.cshtml",
-              "ToolTip": "D:\\C\u01102025\\BanSach\\BanSach\\Areas\\Admin\\Views\\TACGIAs\\Index.cshtml",
-              "RelativeToolTip": "BanSach\\Areas\\Admin\\Views\\TACGIAs\\Index.cshtml",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAAAMAAAAcAAAAAAAAAA==",
+              "DocumentMoniker": "D:\\C\u01102025\\banSach\\banSach\\Areas\\Admin\\Views\\NhaXuatBans\\Index.cshtml",
+              "RelativeDocumentMoniker": "banSach\\Areas\\Admin\\Views\\NhaXuatBans\\Index.cshtml",
+              "ToolTip": "D:\\C\u01102025\\banSach\\banSach\\Areas\\Admin\\Views\\NhaXuatBans\\Index.cshtml",
+              "RelativeToolTip": "banSach\\Areas\\Admin\\Views\\NhaXuatBans\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-04T08:23:48.929Z"
+              "WhenOpened": "2025-04-10T15:26:59.469Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "TACGIAsController.cs",
-              "DocumentMoniker": "D:\\C\u01102025\\BanSach\\BanSach\\Areas\\Admin\\Controllers\\TACGIAsController.cs",
-              "RelativeDocumentMoniker": "BanSach\\Areas\\Admin\\Controllers\\TACGIAsController.cs",
-              "ToolTip": "D:\\C\u01102025\\BanSach\\BanSach\\Areas\\Admin\\Controllers\\TACGIAsController.cs",
-              "RelativeToolTip": "BanSach\\Areas\\Admin\\Controllers\\TACGIAsController.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAswDUAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T08:23:20.453Z"
+              "DocumentIndex": 6,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\C\u01102025\\banSach\\banSach\\Areas\\Admin\\Views\\NhaXuatBans\\Edit.cshtml",
+              "RelativeDocumentMoniker": "banSach\\Areas\\Admin\\Views\\NhaXuatBans\\Edit.cshtml",
+              "ToolTip": "D:\\C\u01102025\\banSach\\banSach\\Areas\\Admin\\Views\\NhaXuatBans\\Edit.cshtml",
+              "RelativeToolTip": "banSach\\Areas\\Admin\\Views\\NhaXuatBans\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-10T15:26:55.526Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Model1.edmx [Diagram1]",
-              "DocumentMoniker": "D:\\C\u01102025\\BanSach\\BanSach\\Models\\Model1.edmx",
-              "RelativeDocumentMoniker": "BanSach\\Models\\Model1.edmx",
-              "ToolTip": "D:\\C\u01102025\\BanSach\\BanSach\\Models\\Model1.edmx [Diagram1]",
-              "RelativeToolTip": "BanSach\\Models\\Model1.edmx [Diagram1]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
-              "WhenOpened": "2025-04-04T08:07:36.64Z"
+              "DocumentIndex": 7,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\C\u01102025\\banSach\\banSach\\Areas\\Admin\\Views\\NhaXuatBans\\Details.cshtml",
+              "RelativeDocumentMoniker": "banSach\\Areas\\Admin\\Views\\NhaXuatBans\\Details.cshtml",
+              "ToolTip": "D:\\C\u01102025\\banSach\\banSach\\Areas\\Admin\\Views\\NhaXuatBans\\Details.cshtml",
+              "RelativeToolTip": "banSach\\Areas\\Admin\\Views\\NhaXuatBans\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-10T15:26:51.615Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\C\u01102025\\banSach\\banSach\\Areas\\Admin\\Views\\NhaXuatBans\\Delete.cshtml",
+              "RelativeDocumentMoniker": "banSach\\Areas\\Admin\\Views\\NhaXuatBans\\Delete.cshtml",
+              "ToolTip": "D:\\C\u01102025\\banSach\\banSach\\Areas\\Admin\\Views\\NhaXuatBans\\Delete.cshtml",
+              "RelativeToolTip": "banSach\\Areas\\Admin\\Views\\NhaXuatBans\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-10T15:26:47.454Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\C\u01102025\\banSach\\banSach\\Areas\\Admin\\Views\\NhaXuatBans\\Create.cshtml",
+              "RelativeDocumentMoniker": "banSach\\Areas\\Admin\\Views\\NhaXuatBans\\Create.cshtml",
+              "ToolTip": "D:\\C\u01102025\\banSach\\banSach\\Areas\\Admin\\Views\\NhaXuatBans\\Create.cshtml",
+              "RelativeToolTip": "banSach\\Areas\\Admin\\Views\\NhaXuatBans\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-10T15:26:38.269Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\C\u01102025\\banSach\\banSach\\Areas\\Admin\\Views\\NhanViens\\Index.cshtml",
+              "RelativeDocumentMoniker": "banSach\\Areas\\Admin\\Views\\NhanViens\\Index.cshtml",
+              "ToolTip": "D:\\C\u01102025\\banSach\\banSach\\Areas\\Admin\\Views\\NhanViens\\Index.cshtml",
+              "RelativeToolTip": "banSach\\Areas\\Admin\\Views\\NhanViens\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-10T15:26:26.833Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\C\u01102025\\banSach\\banSach\\Areas\\Admin\\Views\\NhanViens\\Edit.cshtml",
+              "RelativeDocumentMoniker": "banSach\\Areas\\Admin\\Views\\NhanViens\\Edit.cshtml",
+              "ToolTip": "D:\\C\u01102025\\banSach\\banSach\\Areas\\Admin\\Views\\NhanViens\\Edit.cshtml",
+              "RelativeToolTip": "banSach\\Areas\\Admin\\Views\\NhanViens\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-10T15:26:19.783Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\C\u01102025\\banSach\\banSach\\Areas\\Admin\\Views\\NhanViens\\Details.cshtml",
+              "RelativeDocumentMoniker": "banSach\\Areas\\Admin\\Views\\NhanViens\\Details.cshtml",
+              "ToolTip": "D:\\C\u01102025\\banSach\\banSach\\Areas\\Admin\\Views\\NhanViens\\Details.cshtml",
+              "RelativeToolTip": "banSach\\Areas\\Admin\\Views\\NhanViens\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-10T15:26:09.483Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\C\u01102025\\banSach\\banSach\\Areas\\Admin\\Views\\NhanViens\\Delete.cshtml",
+              "RelativeDocumentMoniker": "banSach\\Areas\\Admin\\Views\\NhanViens\\Delete.cshtml",
+              "ToolTip": "D:\\C\u01102025\\banSach\\banSach\\Areas\\Admin\\Views\\NhanViens\\Delete.cshtml",
+              "RelativeToolTip": "banSach\\Areas\\Admin\\Views\\NhanViens\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-10T15:26:04.153Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\C\u01102025\\banSach\\banSach\\Areas\\Admin\\Views\\NhanViens\\Create.cshtml",
+              "RelativeDocumentMoniker": "banSach\\Areas\\Admin\\Views\\NhanViens\\Create.cshtml",
+              "ToolTip": "D:\\C\u01102025\\banSach\\banSach\\Areas\\Admin\\Views\\NhanViens\\Create.cshtml",
+              "RelativeToolTip": "banSach\\Areas\\Admin\\Views\\NhanViens\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-10T15:25:48.759Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\C\u01102025\\banSach\\banSach\\Areas\\Admin\\Views\\Loais\\Index.cshtml",
+              "RelativeDocumentMoniker": "banSach\\Areas\\Admin\\Views\\Loais\\Index.cshtml",
+              "ToolTip": "D:\\C\u01102025\\banSach\\banSach\\Areas\\Admin\\Views\\Loais\\Index.cshtml",
+              "RelativeToolTip": "banSach\\Areas\\Admin\\Views\\Loais\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-10T15:25:34.109Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\C\u01102025\\banSach\\banSach\\Areas\\Admin\\Views\\Loais\\Edit.cshtml",
+              "RelativeDocumentMoniker": "banSach\\Areas\\Admin\\Views\\Loais\\Edit.cshtml",
+              "ToolTip": "D:\\C\u01102025\\banSach\\banSach\\Areas\\Admin\\Views\\Loais\\Edit.cshtml",
+              "RelativeToolTip": "banSach\\Areas\\Admin\\Views\\Loais\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-10T15:25:14.46Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\C\u01102025\\banSach\\banSach\\Areas\\Admin\\Views\\Loais\\Details.cshtml",
+              "RelativeDocumentMoniker": "banSach\\Areas\\Admin\\Views\\Loais\\Details.cshtml",
+              "ToolTip": "D:\\C\u01102025\\banSach\\banSach\\Areas\\Admin\\Views\\Loais\\Details.cshtml",
+              "RelativeToolTip": "banSach\\Areas\\Admin\\Views\\Loais\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-10T15:24:51.994Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\C\u01102025\\banSach\\banSach\\Areas\\Admin\\Views\\Loais\\Delete.cshtml",
+              "RelativeDocumentMoniker": "banSach\\Areas\\Admin\\Views\\Loais\\Delete.cshtml",
+              "ToolTip": "D:\\C\u01102025\\banSach\\banSach\\Areas\\Admin\\Views\\Loais\\Delete.cshtml",
+              "RelativeToolTip": "banSach\\Areas\\Admin\\Views\\Loais\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-10T15:24:44.436Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\C\u01102025\\banSach\\banSach\\Areas\\Admin\\Views\\Loais\\Create.cshtml",
+              "RelativeDocumentMoniker": "banSach\\Areas\\Admin\\Views\\Loais\\Create.cshtml",
+              "ToolTip": "D:\\C\u01102025\\banSach\\banSach\\Areas\\Admin\\Views\\Loais\\Create.cshtml",
+              "RelativeToolTip": "banSach\\Areas\\Admin\\Views\\Loais\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-10T15:24:30.301Z",
+              "EditorCaption": ""
             }
           ]
         }

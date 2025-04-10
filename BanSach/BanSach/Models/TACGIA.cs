@@ -7,17 +7,17 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace BanSach.Models
+namespace banSach.Models
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class TACGIA
+    public partial class TacGia
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public TACGIA()
+        public TacGia()
         {
-            this.VIETSACHes = new HashSet<VIETSACH>();
+            this.VietSaches = new HashSet<VietSach>();
         }
     
         public string MaTG { get; set; }
@@ -27,6 +27,6 @@ namespace BanSach.Models
         public string DienThoai { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<VIETSACH> VIETSACHes { get; set; }
+        public virtual ICollection<VietSach> VietSaches { get; set; }
     }
 }

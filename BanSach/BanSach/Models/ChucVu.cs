@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace BanSach.Models
+namespace banSach.Models
 {
     using System;
     using System.Collections.Generic;
@@ -17,13 +17,13 @@ namespace BanSach.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public ChucVu()
         {
-            this.Admins = new HashSet<Admin>();
+            this.NhanViens = new HashSet<NhanVien>();
         }
     
         public string MaCV { get; set; }
         public string TenCV { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Admin> Admins { get; set; }
+        public virtual ICollection<NhanVien> NhanViens { get; set; }
     }
 }

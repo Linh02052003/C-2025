@@ -7,23 +7,23 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace BanSach.Models
+namespace banSach.Models
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class LOAI
+    public partial class Loai
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public LOAI()
+        public Loai()
         {
-            this.SACHes = new HashSet<SACH>();
+            this.Saches = new HashSet<Sach>();
         }
     
         public string MaLoai { get; set; }
         public string TenLoai { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<SACH> SACHes { get; set; }
+        public virtual ICollection<Sach> Saches { get; set; }
     }
 }

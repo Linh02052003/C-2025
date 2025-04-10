@@ -7,27 +7,26 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace BanSach.Models
+namespace banSach.Models
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class DONDATHANG
+    public partial class DonDatHang
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public DONDATHANG()
+        public DonDatHang()
         {
-            this.CHITIETDONHANGs = new HashSet<CHITIETDONHANG>();
+            this.ChiTietDonHangs = new HashSet<ChiTietDonHang>();
         }
     
         public string MaDonHang { get; set; }
         public string MaKH { get; set; }
-        public Nullable<System.DateTime> ThoiGianGiaoHang { get; set; }
         public Nullable<System.DateTime> NgayDat { get; set; }
         public string TrangThai { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<CHITIETDONHANG> CHITIETDONHANGs { get; set; }
-        public virtual KHACHHANG KHACHHANG { get; set; }
+        public virtual ICollection<ChiTietDonHang> ChiTietDonHangs { get; set; }
+        public virtual KhachHang KhachHang { get; set; }
     }
 }

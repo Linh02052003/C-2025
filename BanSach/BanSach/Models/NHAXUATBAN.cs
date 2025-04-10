@@ -7,17 +7,17 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace BanSach.Models
+namespace banSach.Models
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class NHAXUATBAN
+    public partial class NhaXuatBan
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public NHAXUATBAN()
+        public NhaXuatBan()
         {
-            this.SACHes = new HashSet<SACH>();
+            this.Saches = new HashSet<Sach>();
         }
     
         public string MaNXB { get; set; }
@@ -25,6 +25,6 @@ namespace BanSach.Models
         public string DiaChi { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<SACH> SACHes { get; set; }
+        public virtual ICollection<Sach> Saches { get; set; }
     }
 }

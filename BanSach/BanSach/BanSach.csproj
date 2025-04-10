@@ -9,17 +9,17 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{9D0E5532-AADB-46F3-A355-749140990DD5}</ProjectGuid>
+    <ProjectGuid>{3CBE1BEF-1D5B-4B6E-A11A-D0B467109993}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BanSach</RootNamespace>
-    <AssemblyName>BanSach</AssemblyName>
+    <RootNamespace>banSach</RootNamespace>
+    <AssemblyName>banSach</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
-    <IISExpressSSLPort>44396</IISExpressSSLPort>
+    <IISExpressSSLPort>44381</IISExpressSSLPort>
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
@@ -130,30 +130,30 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
-    <Compile Include="Areas\Admin\Controllers\AdminController.cs" />
-    <Compile Include="Areas\Admin\Controllers\KHACHHANGsController.cs" />
-    <Compile Include="Areas\Admin\Controllers\NHAXUATBANsController.cs" />
-    <Compile Include="Areas\Admin\Controllers\TACGIAsController.cs" />
+    <Compile Include="Areas\Admin\Controllers\ChiTietDonHangsController.cs" />
+    <Compile Include="Areas\Admin\Controllers\ChucVusController.cs" />
+    <Compile Include="Areas\Admin\Controllers\HomeAdminController.cs" />
+    <Compile Include="Areas\Admin\Controllers\LoaisController.cs" />
+    <Compile Include="Areas\Admin\Controllers\NhanViensController.cs" />
+    <Compile Include="Areas\Admin\Controllers\NhaXuatBansController.cs" />
+    <Compile Include="Areas\Admin\Controllers\SachsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Admin.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\CHITIETDONHANG.cs">
+    <Compile Include="Models\ChiTietDonHang.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\ChucVu.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\DONDATHANG.cs">
+    <Compile Include="Models\DonDatHang.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\KHACHHANG.cs">
+    <Compile Include="Models\KhachHang.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\LOAI.cs">
+    <Compile Include="Models\Loai.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Model1.Context.cs">
@@ -171,23 +171,27 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Model1.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Models\NHAXUATBAN.cs">
+    <Compile Include="Models\NhanVien.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\SACH.cs">
+    <Compile Include="Models\NhaXuatBan.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\TACGIA.cs">
+    <Compile Include="Models\Sach.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\VIETSACH.cs">
+    <Compile Include="Models\sysdiagram.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TacGia.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\VietSach.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\Admin.css" />
-    <Content Include="Content\animate.css" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
     <Content Include="Content\bootstrap-grid.rtl.css" />
@@ -196,8 +200,6 @@
     <Content Include="Content\bootstrap-reboot.min.css" />
     <Content Include="Content\bootstrap-reboot.rtl.css" />
     <Content Include="Content\bootstrap-reboot.rtl.min.css" />
-    <Content Include="Content\bootstrap-theme.css" />
-    <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap-utilities.css" />
     <Content Include="Content\bootstrap-utilities.min.css" />
     <Content Include="Content\bootstrap-utilities.rtl.css" />
@@ -206,64 +208,13 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
-    <Content Include="Content\css.css" />
-    <Content Include="Content\flex-slider.min.css" />
-    <Content Include="Content\font-awesome.css" />
-    <Content Include="Content\img\boách9.jpg" />
-    <Content Include="Content\img\congnghe9.jpg" />
-    <Content Include="Content\img\dd2.jpg" />
-    <Content Include="Content\img\dia9.jpg" />
-    <Content Include="Content\img\gdcd6.jpg" />
-    <Content Include="Content\img\gdcd7.jpg" />
-    <Content Include="Content\img\gdcd9.jpg" />
-    <Content Include="Content\img\gdqp&amp;an10.jpg" />
-    <Content Include="Content\img\gdtc8.jpg" />
-    <Content Include="Content\img\hoa12.jpg" />
-    <Content Include="Content\img\hoa8.jpg" />
-    <Content Include="Content\img\học tốt văn12.jpg" />
-    <Content Include="Content\img\kh4.jpg" />
-    <Content Include="Content\img\ls9.jpg" />
-    <Content Include="Content\img\lí 10.jpg" />
-    <Content Include="Content\img\mt10.jpg" />
-    <Content Include="Content\img\nhacGV8.jpg" />
-    <Content Include="Content\img\oan8.jpg" />
-    <Content Include="Content\img\sinh10 cơ bản.jpg" />
-    <Content Include="Content\img\sinh10.jpg" />
-    <Content Include="Content\img\sinh9.jpg" />
-    <Content Include="Content\img\ta8.jpg" />
-    <Content Include="Content\img\ta9.jpg" />
-    <Content Include="Content\img\tin10.jpg" />
-    <Content Include="Content\img\tin4.jpg" />
-    <Content Include="Content\img\tinnguongVN.jpg" />
-    <Content Include="Content\img\toan5.jpg" />
-    <Content Include="Content\img\toan8.jpg" />
-    <Content Include="Content\img\toan9.jpg" />
-    <Content Include="Content\img\toán hình10.jpg" />
-    <Content Include="Content\img\tron bộ8.jpg" />
-    <Content Include="Content\img\trọn bộ 10.jpg" />
-    <Content Include="Content\img\tv1.jpg" />
-    <Content Include="Content\img\tv2.jpg" />
-    <Content Include="Content\img\van9.jpg" />
-    <Content Include="Content\img\VNsuluoc.jpg" />
-    <Content Include="Content\img\văn10t1.jpg" />
-    <Content Include="Content\img\văn10t2.jpg" />
-    <Content Include="Content\img\đs nâng cao 10.jpg" />
-    <Content Include="Content\img\đại số10.jpg" />
-    <Content Include="Content\jquery-ui.css" />
-    <Content Include="Content\jquery.fancybox.min.css" />
-    <Content Include="Content\magnific-popup.css" />
-    <Content Include="Content\magnific-popup.min.css" />
-    <Content Include="Content\nice-select.css" />
-    <Content Include="Content\niceselect.css" />
-    <Content Include="Content\owl-carousel.css" />
-    <Content Include="Content\PagedList.css" />
-    <Content Include="Content\reset.css" />
-    <Content Include="Content\responsive.css" />
-    <Content Include="Content\Site.css" />
-    <Content Include="Content\slicknav.min.css" />
-    <Content Include="Content\themify-icons.css" />
+    <Content Include="Content\css\adminPageStyle.css" />
+    <Content Include="Content\css\detailUser.css" />
+    <Content Include="Content\css\loginAdminPage.css" />
+    <Content Include="Content\css\styleAdmin.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="Content\Site.css" />
     <Content Include="Models\Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>Model1.Context.cs</LastGenOutput>
@@ -287,43 +238,39 @@
     <Content Include="Models\Model1.edmx.diagram">
       <DependentUpon>Model1.edmx</DependentUpon>
     </Content>
-    <Content Include="Areas\Admin\Views\Admin\Index.cshtml" />
-    <Content Include="Areas\Admin\Views\KHACHHANGs\Create.cshtml" />
-    <Content Include="Areas\Admin\Views\KHACHHANGs\Delete.cshtml" />
-    <Content Include="Areas\Admin\Views\KHACHHANGs\Details.cshtml" />
-    <Content Include="Areas\Admin\Views\KHACHHANGs\Edit.cshtml" />
-    <Content Include="Areas\Admin\Views\KHACHHANGs\Index.cshtml" />
-    <Content Include="Areas\Admin\Views\NHAXUATBANs\Create.cshtml" />
-    <Content Include="Areas\Admin\Views\NHAXUATBANs\Delete.cshtml" />
-    <Content Include="Areas\Admin\Views\NHAXUATBANs\Details.cshtml" />
-    <Content Include="Areas\Admin\Views\NHAXUATBANs\Edit.cshtml" />
-    <Content Include="Areas\Admin\Views\NHAXUATBANs\Index.cshtml" />
-    <Content Include="Areas\Admin\Views\Shared\_LayoutAdmin.cshtml" />
     <Content Include="Areas\Admin\Views\web.config" />
-    <Content Include="Content\bootstrap-grid.css.map" />
-    <Content Include="Content\bootstrap-grid.min.css.map" />
-    <Content Include="Content\bootstrap-grid.rtl.css.map" />
-    <Content Include="Content\bootstrap-grid.rtl.min.css.map" />
-    <Content Include="Content\bootstrap-reboot.css.map" />
-    <Content Include="Content\bootstrap-reboot.min.css.map" />
-    <Content Include="Content\bootstrap-reboot.rtl.css.map" />
-    <Content Include="Content\bootstrap-reboot.rtl.min.css.map" />
-    <Content Include="Content\bootstrap-theme.css.map" />
-    <Content Include="Content\bootstrap-theme.min.css.map" />
-    <Content Include="Content\bootstrap-utilities.css.map" />
-    <Content Include="Content\bootstrap-utilities.min.css.map" />
-    <Content Include="Content\bootstrap-utilities.rtl.css.map" />
-    <Content Include="Content\bootstrap-utilities.rtl.min.css.map" />
-    <Content Include="Content\bootstrap.css.map" />
-    <Content Include="Content\bootstrap.min.css.map" />
-    <Content Include="Content\bootstrap.rtl.css.map" />
-    <Content Include="Content\bootstrap.rtl.min.css.map" />
-    <Content Include="Areas\Admin\Views\Shared\_Layout.cshtml" />
-    <Content Include="Areas\Admin\Views\TACGIAs\Create.cshtml" />
-    <Content Include="Areas\Admin\Views\TACGIAs\Delete.cshtml" />
-    <Content Include="Areas\Admin\Views\TACGIAs\Details.cshtml" />
-    <Content Include="Areas\Admin\Views\TACGIAs\Edit.cshtml" />
-    <Content Include="Areas\Admin\Views\TACGIAs\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\_LayoutAdmin.cshtml" />
+    <Content Include="Areas\Admin\Views\HomeAdmin\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\ChiTietDonHangs\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\ChiTietDonHangs\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\ChiTietDonHangs\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\ChiTietDonHangs\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\ChiTietDonHangs\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\ChucVus\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\ChucVus\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\ChucVus\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\ChucVus\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\ChucVus\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Loais\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\Loais\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\Loais\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\Loais\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\Loais\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\NhanViens\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\NhanViens\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\NhanViens\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\NhanViens\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\NhanViens\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\NhaXuatBans\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\NhaXuatBans\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\NhaXuatBans\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\NhaXuatBans\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\NhaXuatBans\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Sachs\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\Sachs\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\Sachs\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\Sachs\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\Sachs\Index.cshtml" />
     <None Include="Scripts\jquery-3.7.0.intellisense.js" />
     <Content Include="Scripts\jquery-3.7.0.js" />
     <Content Include="Scripts\jquery-3.7.0.min.js" />
@@ -355,6 +302,22 @@
     <Folder Include="Areas\Admin\Data\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\bootstrap.rtl.min.css.map" />
+    <Content Include="Content\bootstrap.rtl.css.map" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-utilities.rtl.min.css.map" />
+    <Content Include="Content\bootstrap-utilities.rtl.css.map" />
+    <Content Include="Content\bootstrap-utilities.min.css.map" />
+    <Content Include="Content\bootstrap-utilities.css.map" />
+    <Content Include="Content\bootstrap-reboot.rtl.min.css.map" />
+    <Content Include="Content\bootstrap-reboot.rtl.css.map" />
+    <Content Include="Content\bootstrap-reboot.min.css.map" />
+    <Content Include="Content\bootstrap-reboot.css.map" />
+    <Content Include="Content\bootstrap-grid.rtl.min.css.map" />
+    <Content Include="Content\bootstrap-grid.rtl.css.map" />
+    <Content Include="Content\bootstrap-grid.min.css.map" />
+    <Content Include="Content\bootstrap-grid.css.map" />
     <None Include="packages.config" />
     <Content Include="Scripts\bootstrap.min.js.map" />
     <Content Include="Scripts\bootstrap.js.map" />
@@ -384,9 +347,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>50991</DevelopmentServerPort>
+          <DevelopmentServerPort>56455</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>https://localhost:44396/</IISUrl>
+          <IISUrl>https://localhost:44381/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

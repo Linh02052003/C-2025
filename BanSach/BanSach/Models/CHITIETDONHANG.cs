@@ -7,19 +7,19 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace BanSach.Models
+namespace banSach.Models
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class CHITIETDONHANG
+    public partial class ChiTietDonHang
     {
         public string MaDonHang { get; set; }
-        public string Masach { get; set; }
-        public Nullable<int> Soluong { get; set; }
-        public Nullable<decimal> Dongia { get; set; }
+        public string MaSach { get; set; }
+        public Nullable<int> SoLuong { get; set; }
+        public Nullable<decimal> DonGia { get; set; }
     
-        public virtual DONDATHANG DONDATHANG { get; set; }
-        public virtual SACH SACH { get; set; }
+        public virtual DonDatHang DonDatHang { get; set; }
+        public virtual Sach Sach { get; set; }
     }
 }

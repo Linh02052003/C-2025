@@ -7,18 +7,18 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace BanSach.Models
+namespace banSach.Models
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class VIETSACH
+    public partial class VietSach
     {
         public string MaTG { get; set; }
-        public string Masach { get; set; }
+        public string MaSach { get; set; }
         public string VaiTro { get; set; }
     
-        public virtual SACH SACH { get; set; }
-        public virtual TACGIA TACGIA { get; set; }
+        public virtual Sach Sach { get; set; }
+        public virtual TacGia TacGia { get; set; }
     }
 }

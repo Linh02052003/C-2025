@@ -1,26 +1,27 @@
-﻿CREATE DATABASE QLBansach
+﻿CREATE DATABASE QLBansach;
 
-
---TẠo bảng chức vụ
-CREATE TABLE ChucVu(
-	MaCV NVARCHAR(50) PRIMARY KEY,
-	TenCV NVARCHAR(50),
-);
--- Tạo bảng Admin
-CREATE TABLE Admin (
-	MaAdmin NVARCHAR(50) PRIMARY KEY,
-    UserAdmin VARCHAR(50) ,
-    PassAdmin VARCHAR(50),
-    Hoten NVARCHAR(100),
-	MaCV NVARCHAR(50),
-	FOREIGN KEY (MaCV) REFERENCES ChucVu(MaCV)
+-- TẠO BẢNG CHỨC VỤ
+CREATE TABLE ChucVu (
+    MaCV NVARCHAR(50) PRIMARY KEY,
+    TenCV NVARCHAR(50)
 );
 
--- Tạo bảng KHACHHANG
-CREATE TABLE KHACHHANG (
+-- TẠO BẢNG NHÂN VIÊN
+CREATE TABLE NhanVien (
+    MaNhanVien NVARCHAR(50) PRIMARY KEY,
+    HoTen NVARCHAR(100),
+    SoDienThoai VARCHAR(10),
+    Email VARCHAR(255),
+    TenTK NVARCHAR(50),
+    MatKhau VARCHAR(50),
+    MaCV NVARCHAR(50),
+    FOREIGN KEY (MaCV) REFERENCES ChucVu(MaCV)
+);
+
+-- TẠO BẢNG KHÁCH HÀNG
+CREATE TABLE KhachHang (
     MaKH NVARCHAR(50) PRIMARY KEY,
     HoTen NVARCHAR(100),
-	GioiTinh Bit,
     SoDienThoai VARCHAR(15),
     MatKhau VARCHAR(50),
     Email VARCHAR(100),
@@ -28,35 +29,36 @@ CREATE TABLE KHACHHANG (
     NgaySinh DATE
 );
 
--- Tạo bảng NHIAXUATBAN
-CREATE TABLE NHAXUATBAN (
+-- TẠO BẢNG NHÀ XUẤT BẢN
+CREATE TABLE NhaXuatBan (
     MaNXB NVARCHAR(50) PRIMARY KEY,
     TenNXB NVARCHAR(255),
     DiaChi NVARCHAR(255)
 );
 
--- Tạo bảng LOAI (Loại sách)
-CREATE TABLE LOAI (
+-- TẠO BẢNG LOẠI SÁCH
+CREATE TABLE Loai (
     MaLoai NVARCHAR(50) PRIMARY KEY,
     TenLoai NVARCHAR(100)
 );
 
--- Tạo bảng SACH
-CREATE TABLE SACH (
-    Masach NVARCHAR(50) PRIMARY KEY,
-    Tensach NVARCHAR(255),
-    Giaban DECIMAL(10,2),
+-- TẠO BẢNG SÁCH
+CREATE TABLE Sach (
+    MaSach NVARCHAR(50) PRIMARY KEY,
+    TenSach NVARCHAR(255),
+    Hinh NVARCHAR(255),
+    GiaBan DECIMAL(10,2),
     MoTa NVARCHAR(1000),
     MaNXB NVARCHAR(50),
     NgayNhapHang DATE,
     SoLuongTon INT,
     MaLoai NVARCHAR(50),
-    FOREIGN KEY (MaNXB) REFERENCES NHAXUATBAN(MaNXB),
-    FOREIGN KEY (MaLoai) REFERENCES LOAI(MaLoai)
+    FOREIGN KEY (MaNXB) REFERENCES NhaXuatBan(MaNXB),
+    FOREIGN KEY (MaLoai) REFERENCES Loai(MaLoai)
 );
 
--- Tạo bảng TACGIA
-CREATE TABLE TACGIA (
+-- TẠO BẢNG TÁC GIẢ
+CREATE TABLE TacGia (
     MaTG NVARCHAR(50) PRIMARY KEY,
     TenTG NVARCHAR(255),
     DiaChi NVARCHAR(255),
@@ -64,33 +66,32 @@ CREATE TABLE TACGIA (
     DienThoai VARCHAR(15)
 );
 
--- Tạo bảng VIETSACH (Liên kết sách và tác giả)
-CREATE TABLE VIETSACH (
+-- TẠO BẢNG VIẾT SÁCH (LIÊN KẾT SÁCH VỚI TÁC GIẢ)
+CREATE TABLE VietSach (
     MaTG NVARCHAR(50),
-    Masach NVARCHAR(50),
+    MaSach NVARCHAR(50),
     VaiTro NVARCHAR(100),
-    PRIMARY KEY (MaTG, Masach),
-    FOREIGN KEY (MaTG) REFERENCES TACGIA(MaTG),
-    FOREIGN KEY (Masach) REFERENCES SACH(Masach)
+    PRIMARY KEY (MaTG, MaSach),
+    FOREIGN KEY (MaTG) REFERENCES TacGia(MaTG),
+    FOREIGN KEY (MaSach) REFERENCES Sach(MaSach)
 );
 
--- Tạo bảng DONDATHANG
-CREATE TABLE DONDATHANG (
+-- TẠO BẢNG ĐƠN ĐẶT HÀNG
+CREATE TABLE DonDatHang (
     MaDonHang NVARCHAR(50) PRIMARY KEY,
     MaKH NVARCHAR(50),
-    ThoiGianGiaoHang DATETIME,
     NgayDat DATE,
     TrangThai NVARCHAR(50),
-    FOREIGN KEY (MaKH) REFERENCES KHACHHANG(MaKH)
+    FOREIGN KEY (MaKH) REFERENCES KhachHang(MaKH)
 );
 
--- Tạo bảng CHITIETDONHANG
-CREATE TABLE CHITIETDONHANG (
+-- TẠO BẢNG CHI TIẾT ĐƠN HÀNG
+CREATE TABLE ChiTietDonHang (
     MaDonHang NVARCHAR(50),
-    Masach NVARCHAR(50),
-    Soluong INT,
-    Dongia DECIMAL(10,2),
-    PRIMARY KEY (MaDonHang, Masach),
-    FOREIGN KEY (MaDonHang) REFERENCES DONDATHANG(MaDonHang),
-    FOREIGN KEY (Masach) REFERENCES SACH(Masach)
+    MaSach NVARCHAR(50),
+    SoLuong INT,
+    DonGia DECIMAL(10,2),
+    PRIMARY KEY (MaDonHang, MaSach),
+    FOREIGN KEY (MaDonHang) REFERENCES DonDatHang(MaDonHang),
+    FOREIGN KEY (MaSach) REFERENCES Sach(MaSach)
 );
