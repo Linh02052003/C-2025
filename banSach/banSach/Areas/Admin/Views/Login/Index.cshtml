@@ -1,0 +1,50 @@
+﻿@{
+    ViewBag.Title = "Đăng nhập Admin";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/Content/css/loginAdminPage.css" />
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div class="container">
+        <div class="login-content">
+            @using (Html.BeginForm("Index", "Login", FormMethod.Post))
+            {
+                @Html.AntiForgeryToken()
+                <img src="~/img/logo/logo.png" />
+                <h2 class="title">Welcome</h2>
+
+
+                <div class="input-div one">
+                    <div class="i">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="div">
+                        @*<h5>Tên đăng nhập</h5>*@
+                        <input type="text" name="TenTK" placeholder="Tên đăng nhập" class="input resetVal" required />
+                    </div>
+                </div>
+
+                <div class="input-div pass">
+                    <div class="i">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <div class="div">
+                        @*<h5 >Mật khẩu</h5>*@
+                        <input type="password" name="MatKhau" placeholder="Mật khẩu" class="input resetVal" required />
+                    </div>
+                </div>
+
+                <input type="submit" class="btn" value="Đăng nhập" />
+            }
+        </div>
+    </div>
+    <script src="~/Scripts/js/loginPage.js"></script>
+</body>
+</html>

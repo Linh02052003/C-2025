@@ -16,6 +16,18 @@ namespace bansach.Areas.Admin.Controllers
     {
         private QLBanSachEntities db = new QLBanSachEntities();
 
+        public ActionResult ToggleStatus(string id)
+        {
+            var sach = db.Saches.Find(id);
+            if (sach != null)
+            {
+                sach.Status = sach.Status == 1 ? 0 : 1;
+                db.SaveChanges();
+            }
+            return RedirectToAction("Index");
+        }
+
+
         // GET: Admin/Saches
         public async Task<ActionResult> Index()
         {
@@ -51,7 +63,7 @@ namespace bansach.Areas.Admin.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Create([Bind(Include = "TenSach,GiaBan,MoTa,MaNXB,NgayNhapHang,SoLuongTon,MaLoai")] Sach sach, HttpPostedFileBase HinhAnh)
+        public async Task<ActionResult> Create([Bind(Include = "TenSach,GiaBan,MoTa,MaNXB,NgayNhapHang,SoLuongTon,MaLoai,Status")] Sach sach, HttpPostedFileBase HinhAnh)
         {
             if (ModelState.IsValid)
             {
@@ -72,13 +84,14 @@ namespace bansach.Areas.Admin.Controllers
                 if (HinhAnh != null && HinhAnh.ContentLength > 0)
                 {
                     var fileName = Path.GetFileName(HinhAnh.FileName);
-                    var path = Path.Combine(Server.MapPath("~/img/"), fileName);
+                    var path = Path.Combine(Server.MapPath("~/img/sach/"), fileName);
                     HinhAnh.SaveAs(path);
                     sach.Hinh = fileName;
                 }
-
+                sach.Status = 1;
                 db.Saches.Add(sach);
                 await db.SaveChangesAsync();
+                TempData["Message"] = "Thêm sách thành công!";
                 return RedirectToAction("Index");
             }
 
@@ -117,12 +130,14 @@ namespace bansach.Areas.Admin.Controllers
                 if (HinhAnh != null && HinhAnh.ContentLength > 0)
                 {
                     var fileName = Path.GetFileName(HinhAnh.FileName);
-                    var path = Path.Combine(Server.MapPath("~/img/"), fileName);
+                    var path = Path.Combine(Server.MapPath("~/img/sach/"), fileName);
                     HinhAnh.SaveAs(path);
                     sach.Hinh = fileName;
                 }
+                sach.Status = 1;
                 db.Entry(sach).State = EntityState.Modified;
                 await db.SaveChangesAsync();
+                TempData["Message"] = "Cập nhật sách thành công!";
                 return RedirectToAction("Index");
             }
             
@@ -154,6 +169,7 @@ namespace bansach.Areas.Admin.Controllers
             Sach sach = await db.Saches.FindAsync(id);
             db.Saches.Remove(sach);
             await db.SaveChangesAsync();
+            TempData["Message"] = "Xóa sách thành công!";
             return RedirectToAction("Index");
         }
 

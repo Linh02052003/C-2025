@@ -17,7 +17,7 @@ namespace banSach.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public KhachHang()
         {
-            this.DonDatHangs = new HashSet<DonDatHang>();
+            this.GioHangs = new HashSet<GioHang>();
         }
     
         public string MaKH { get; set; }
@@ -25,10 +25,10 @@ namespace banSach.Models
         public string SoDienThoai { get; set; }
         public string MatKhau { get; set; }
         public string Email { get; set; }
-        public string DiaChiNH { get; set; }
+        public string DiaChi { get; set; }
         public Nullable<System.DateTime> NgaySinh { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<DonDatHang> DonDatHangs { get; set; }
+        public virtual ICollection<GioHang> GioHangs { get; set; }
     }
 }

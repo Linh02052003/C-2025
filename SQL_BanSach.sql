@@ -25,7 +25,7 @@ CREATE TABLE KhachHang (
     SoDienThoai VARCHAR(15),
     MatKhau VARCHAR(50),
     Email VARCHAR(100),
-    DiaChiNH NVARCHAR(255),
+    DiaChi NVARCHAR(255),
     NgaySinh DATE
 );
 
@@ -39,7 +39,8 @@ CREATE TABLE NhaXuatBan (
 -- TẠO BẢNG LOẠI SÁCH
 CREATE TABLE Loai (
     MaLoai NVARCHAR(50) PRIMARY KEY,
-    TenLoai NVARCHAR(100)
+    TenLoai NVARCHAR(100),
+	Status int
 );
 
 -- TẠO BẢNG SÁCH
@@ -53,6 +54,7 @@ CREATE TABLE Sach (
     NgayNhapHang DATE,
     SoLuongTon INT,
     MaLoai NVARCHAR(50),
+	Status int,
     FOREIGN KEY (MaNXB) REFERENCES NhaXuatBan(MaNXB),
     FOREIGN KEY (MaLoai) REFERENCES Loai(MaLoai)
 );
@@ -63,7 +65,8 @@ CREATE TABLE TacGia (
     TenTG NVARCHAR(255),
     DiaChi NVARCHAR(255),
     TieuSu NVARCHAR(1000),
-    DienThoai VARCHAR(15)
+    DienThoai VARCHAR(15),
+	Status int
 );
 
 -- TẠO BẢNG VIẾT SÁCH (LIÊN KẾT SÁCH VỚI TÁC GIẢ)
@@ -79,10 +82,12 @@ CREATE TABLE VietSach (
 -- TẠO BẢNG ĐƠN ĐẶT HÀNG
 CREATE TABLE DonDatHang (
     MaDonHang NVARCHAR(50) PRIMARY KEY,
-    MaKH NVARCHAR(50),
+    HoTen NVARCHAR(100),
+    SoDienThoai VARCHAR(15),
+	 Email VARCHAR(100),
+    DiaChi NVARCHAR(255),
     NgayDat DATE,
     TrangThai NVARCHAR(50),
-    FOREIGN KEY (MaKH) REFERENCES KhachHang(MaKH)
 );
 
 -- TẠO BẢNG CHI TIẾT ĐƠN HÀNG
@@ -93,5 +98,23 @@ CREATE TABLE ChiTietDonHang (
     DonGia DECIMAL(10,2),
     PRIMARY KEY (MaDonHang, MaSach),
     FOREIGN KEY (MaDonHang) REFERENCES DonDatHang(MaDonHang),
+    FOREIGN KEY (MaSach) REFERENCES Sach(MaSach)
+);
+-- Tạo bảng giỏ hàng
+CREATE TABLE GioHang (
+    MaGioHang NVARCHAR(50) PRIMARY KEY,
+    MaKH NVARCHAR(50),
+    NgayTao DATETIME ,
+    FOREIGN KEY (MaKH) REFERENCES KhachHang(MaKH)
+);
+
+-- tạo bảng chi tiết giỏ hàng
+CREATE TABLE ChiTietGioHang (
+    MaChiTiet NVARCHAR(50) PRIMARY KEY,
+    MaGioHang NVARCHAR(50),
+    MaSach NVARCHAR(50),
+    SoLuong INT,
+    DonGia DECIMAL(18, 2),
+    FOREIGN KEY (MaGioHang) REFERENCES GioHang(MaGioHang),
     FOREIGN KEY (MaSach) REFERENCES Sach(MaSach)
 );

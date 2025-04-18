@@ -21,12 +21,14 @@ namespace banSach.Models
         }
     
         public string MaDonHang { get; set; }
-        public string MaKH { get; set; }
+        public string HoTen { get; set; }
+        public string SoDienThoai { get; set; }
+        public string Email { get; set; }
+        public string DiaChi { get; set; }
         public Nullable<System.DateTime> NgayDat { get; set; }
         public string TrangThai { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ChiTietDonHang> ChiTietDonHangs { get; set; }
-        public virtual KhachHang KhachHang { get; set; }
     }
 }

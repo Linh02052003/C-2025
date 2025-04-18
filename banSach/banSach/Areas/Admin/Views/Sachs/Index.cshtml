@@ -6,6 +6,24 @@
 }
 
 <main>
+    <div>
+        @if (TempData["SuccessMessage"] != null)
+        {
+            <div class="alert-box success" id="success-alert">
+                <span class="icon">✔</span>
+                <span>@TempData["SuccessMessage"]</span>
+                <button class="close-btn" onclick="this.parentElement.style.display='none';">×</button>
+            </div>
+        }
+        @if (TempData["ErrorMessage"] != null)
+        {
+            <div class="alert-box error" id="error-alert">
+                <span class="icon">✖</span>
+                <span>@TempData["ErrorMessage"]</span>
+                <button class="close-btn" onclick="this.parentElement.style.display='none';">×</button>
+            </div>
+        }
+    </div>
     <div class="container-fluid px-4">
         <br />
         <h2>Danh sách sách</h2>
@@ -35,7 +53,7 @@
                                 <td>
                                     @if (!string.IsNullOrEmpty(item.Hinh))
                                     {
-                                        <img src="@Url.Content("~/img/" + item.Hinh)" alt="Hình ảnh" class="img-thumbnail" style="max-width: 100px; max-height: 100px;" />
+                                        <img src="@Url.Content("~/img/sach/" + item.Hinh)" alt="Hình ảnh" class="img-thumbnail" style="max-width: 100px; max-height: 100px;" />
                                     }
                                     else
                                     {
@@ -48,6 +66,13 @@
 
                                 <td>
                                     <div class="d-flex">
+                                        <a href="@Url.Action("ToggleStatus", new { id = item.MaSach })"
+                                           title="@(item.Status == 1 ? "Ẩn sách" : "Hiện sách")"
+                                           class="me-2"
+                                           style="color: @(item.Status == 1 ? "green" : "gray")">
+                                            <i class="fa fa-lg @(item.Status == 1 ? "fa-eye" : "fa-eye-slash")"></i>
+                                        </a>
+
                                         <a href="@Url.Action("Edit", new { id = item.MaSach })" title="Sửa">
                                             <i class="fa-solid fa-lg fa-pen-to-square"></i>
                                         </a>

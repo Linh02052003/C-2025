@@ -26,14 +26,15 @@ namespace banSach.Models
         }
     
         public virtual DbSet<ChiTietDonHang> ChiTietDonHangs { get; set; }
+        public virtual DbSet<ChiTietGioHang> ChiTietGioHangs { get; set; }
         public virtual DbSet<ChucVu> ChucVus { get; set; }
         public virtual DbSet<DonDatHang> DonDatHangs { get; set; }
+        public virtual DbSet<GioHang> GioHangs { get; set; }
         public virtual DbSet<KhachHang> KhachHangs { get; set; }
         public virtual DbSet<Loai> Loais { get; set; }
         public virtual DbSet<NhanVien> NhanViens { get; set; }
         public virtual DbSet<NhaXuatBan> NhaXuatBans { get; set; }
         public virtual DbSet<Sach> Saches { get; set; }
-        public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
         public virtual DbSet<TacGia> TacGias { get; set; }
         public virtual DbSet<VietSach> VietSaches { get; set; }
     }

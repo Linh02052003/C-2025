@@ -5,7 +5,26 @@
     Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
 }
 
+
 <main>
+    <div>
+        @if (TempData["SuccessMessage"] != null)
+        {
+            <div class="alert-box success" id="success-alert">
+                <span class="icon">✔</span>
+                <span>@TempData["SuccessMessage"]</span>
+                <button class="close-btn" onclick="this.parentElement.style.display='none';">×</button>
+            </div>
+        }
+        @if (TempData["ErrorMessage"] != null)
+        {
+            <div class="alert-box error" id="error-alert">
+                <span class="icon">✖</span>
+                <span>@TempData["ErrorMessage"]</span>
+                <button class="close-btn" onclick="this.parentElement.style.display='none';">×</button>
+            </div>
+        }
+    </div>
     <div class="container-fluid px-4">
         <br />
         <h2>Danh sách chức vụ</h2>

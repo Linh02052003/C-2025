@@ -22,6 +22,7 @@ namespace banSach.Models
     
         public string MaLoai { get; set; }
         public string TenLoai { get; set; }
+        public Nullable<int> Status { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Sach> Saches { get; set; }

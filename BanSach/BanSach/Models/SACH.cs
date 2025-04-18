@@ -18,6 +18,7 @@ namespace banSach.Models
         public Sach()
         {
             this.ChiTietDonHangs = new HashSet<ChiTietDonHang>();
+            this.ChiTietGioHangs = new HashSet<ChiTietGioHang>();
             this.VietSaches = new HashSet<VietSach>();
         }
     
@@ -30,9 +31,12 @@ namespace banSach.Models
         public Nullable<System.DateTime> NgayNhapHang { get; set; }
         public Nullable<int> SoLuongTon { get; set; }
         public string MaLoai { get; set; }
+        public Nullable<int> Status { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ChiTietDonHang> ChiTietDonHangs { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<ChiTietGioHang> ChiTietGioHangs { get; set; }
         public virtual Loai Loai { get; set; }
         public virtual NhaXuatBan NhaXuatBan { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

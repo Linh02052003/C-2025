@@ -1,16 +1,4 @@
-﻿@*@{
-    if (Session["Email"] != null)
-    {
-        string Email = Session["Email"].ToString();
-        string Name = Session["TenTaiKhoan"].ToString();
-        ViewBag.Email = Email;
-        ViewBag.Name = Name;
-    }
-    else
-    {
-        Response.Redirect("~/Admin/Login_63130803/Index");
-    }
-}*@
+﻿
 <!DOCTYPE html>
 <html>
 <head>
@@ -20,12 +8,13 @@
           content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <link rel="shortcut icon" href="https://statics.vinpearl.com/favicon.png" type="image/png">
-    <title>Dashboard - Vinpearl</title>
+    <link rel="shortcut icon" href="~/img/logo/logo.png" type="image/png">
+    <title>@ViewBag.Title</title>
     <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css"
           rel="stylesheet" />
     <link href="~/Content/css/adminPageStyle.css" rel="stylesheet" />
     <link href="~/Content/css/detailUser.css" rel="stylesheet" />
+    <link href="~/Content/css/thongbao.css" rel="stylesheet" />
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js"
             crossorigin="anonymous"></script>
     <style>
@@ -62,7 +51,7 @@
     <nav class="sb-topnav navbar navbar-expand navbar-dark bg-light bg-light shadow">
         <!-- Navbar Brand-->
         <a class="navbar-brand ps-3 text-dark d-flex justify-content-center" href="">
-        <img src="https://vinpearl.com/themes/porto/images/new-homepage/vp-logo-blue.svg" alt="Vinpearl Logo" class="navbar-brand-image">
+            <img src="~/img/logo/logo.png" alt="Vinpearl Logo" class="navbar-brand-image">
         </a>
         <!-- Sidebar Toggle-->
         <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0"
@@ -72,7 +61,7 @@
         </button>
         <!-- Navbar-->
         <ul class="navbar-nav ms-auto">
-            <li class="text-dark my-auto fw-bold">@ViewBag.Email</li>
+            <li class="text-dark my-auto fw-bold">@ViewBag.HoTen</li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle text-dark"
                    id="navbarDropdown"
@@ -84,7 +73,7 @@
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end">
                     <li>
-                        @*@Html.ActionLink("Logout", "Logout", "Login_63130803", null, new { @class = "dropdown-item" })*@
+                        @Html.ActionLink("Đăng xuất", "Logout", "Login", new { area = "Admin" }, new { @class = "dropdown-item" })
                     </li>
                 </ul>
             </li>
@@ -96,83 +85,79 @@
             <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
                 <div class="sb-sidenav-menu">
                     <div class="nav">
-                            <a class="nav-link" href="">
-                                <div class="icon-wrapper">
-                                    <i class="fas fa-lg fa-tachometer-alt text-dark p3"></i>
-                                </div>
-                                <span class="ms-2 text-dark">Trang Chủ</span>
-                            </a>
-
-                            <a class="nav-link" href="">
-                                <div class="icon-wrapper">
-                                    <i class="fas fa-lg fa-users text-dark"></i>
-                                </div>
-                                <span class="ms-2 text-dark">Khách Hàng</span>
-                            </a>
-
-                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseNhanVien" aria-expanded="false" aria-controls="collapseLayouts">
-                                <div class="icon-wrapper">
-                                    <i class="fa-solid fa-lg fa-user-group text-dark"></i>
-                                </div>
-                                <span class="ms-2 text-dark">Nhân Viên</span>
-                                <div class="sb-sidenav-collapse-arrow">
-                                    <svg class="svg-inline--fa fa-angle-down text-dark" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M169.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 274.7 54.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path></svg><!-- <i class="fas fa-angle-down"></i> Font Awesome fontawesome.com -->
-                                </div>
-                            </a>
-                            <div class="collapse" id="collapseNhanVien" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion" style="">
-                                <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link text-dark" href="">Nhân Viên</a>
-                                    <a class="nav-link text-dark" href="">Loại Nhân Viên</a>
-                                </nav>
+                        <a class="nav-link" href="@Url.Action("Index", "HomeAdmin")">
+                            <div class="icon-wrapper">
+                                <i class="fas fa-lg fa-tachometer-alt text-dark p3"></i>
                             </div>
+                            <span class="ms-2 text-dark">Trang Chủ</span>
+                        </a>
 
-                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseDichVu" aria-expanded="false" aria-controls="collapseLayouts">
-                                <div class="icon-wrapper">
-                                    <i class="fa-solid fa-lg fa-list text-dark"></i>
-                                </div>
-                                <span class="ms-2 text-dark">Dịch Vụ</span>
-                                <div class="sb-sidenav-collapse-arrow">
-                                    <svg class="svg-inline--fa fa-angle-down text-dark" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M169.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 274.7 54.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path></svg><!-- <i class="fas fa-angle-down"></i> Font Awesome fontawesome.com -->
-                                </div>
-                            </a>
-                            <div class="collapse" id="collapseDichVu" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion" style="">
-                                <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link text-dark" href="">Dịch Vụ</a>
-                                    <a class="nav-link text-dark" href="">Loại Dịch Vụ</a>
-                                </nav>
+                        <a class="nav-link" href="">
+                            <div class="icon-wrapper">
+                                <i class="fas fa-lg fa-users text-dark"></i>
                             </div>
+                            <span class="ms-2 text-dark">Khách Hàng</span>
+                        </a>
 
-                            <a class="nav-link" href="">
-                                <div class="icon-wrapper">
-                                    <i class="fa-solid fa-lg fa-ticket text-dark"></i>
-                                </div>
-                                <span class="ms-2 text-dark">Vé</span>
-                            </a>
-
-                            <a class="nav-link" href="">
-                                <div class="icon-wrapper">
-                                    <i class="fa-solid fa-lg fa-file-invoice-dollar text-dark"></i>
-                                </div>
-                                <span class="ms-2 text-dark">Hoá Đơn</span>
-                            </a>
-
-                            <a class="nav-link" href="">
-                                <div class="icon-wrapper">
-                                    <i class=" fa-solid fa-lg fa-file-invoice-dollar text-dark"></i>
-                                </div>
-                                <span class="ms-2 text-dark">Chi Tiết Hoá Đơn</span>
-                            </a>
-
-                            <a class="nav-link" href="">
-                                <div class="icon-wrapper">
-                                    <i class="fa-solid fa-lg fa-money-check-dollar text-dark"></i>
-                                </div>
-                                <span class="ms-2 text-dark">Số Ca</span>
-                            </a>
-
+                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseNhanVien" aria-expanded="false" aria-controls="collapseLayouts">
+                            <div class="icon-wrapper">
+                                <i class="fa-solid fa-lg fa-user-group text-dark"></i>
+                            </div>
+                            <span class="ms-2 text-dark">Nhân Viên</span>
+                            <div class="sb-sidenav-collapse-arrow">
+                                <svg class="svg-inline--fa fa-angle-down text-dark" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M169.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 274.7 54.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path></svg><!-- <i class="fas fa-angle-down"></i> Font Awesome fontawesome.com -->
+                            </div>
+                        </a>
+                        <div class="collapse" id="collapseNhanVien" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion" style="">
+                            <nav class="sb-sidenav-menu-nested nav">
+                                <a class="nav-link text-dark" href="@Url.Action("Index", "NhanViens")">Nhân Viên</a>
+                                <a class="nav-link text-dark" href="@Url.Action("Index", "ChucVus")">Chức Vụ</a>
+                            </nav>
                         </div>
+
+                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseDichVu" aria-expanded="false" aria-controls="collapseLayouts">
+                            <div class="icon-wrapper">
+                                <!-- Thay đổi icon ở đây -->
+                                <i class="fa-solid fa-lg fa-book text-dark"></i>
+                            </div>
+                            <span class="ms-2 text-dark">Sách</span>
+                            <div class="sb-sidenav-collapse-arrow">
+                                <svg class="svg-inline--fa fa-angle-down text-dark" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M169.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 274.7 54.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path></svg><!-- <i class="fas fa-angle-down"></i> Font Awesome fontawesome.com -->
+                            </div>
+                        </a>
+                        <div class="collapse" id="collapseDichVu" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion" style="">
+                            <nav class="sb-sidenav-menu-nested nav">
+                                <a class="nav-link text-dark" href="@Url.Action("Index", "Sachs")">Sách</a>
+                                <a class="nav-link text-dark" href="@Url.Action("Index", "Loais")">Loại Sách</a>
+                            </nav>
+                        </div>
+
+                        <a class="nav-link" href="@Url.Action("Index", "TacGias")">
+                            <div class="icon-wrapper">
+                                <!-- Icon của tác giả -->
+                                <i class="fa-solid fa-lg fa-user text-dark"></i>
+                            </div>
+                            <span class="ms-2 text-dark">Tác Giả</span>
+                        </a>
+
+
+                        <a class="nav-link" href="@Url.Action("Index", "NHAXUATBANs")">
+                            <div class="icon-wrapper">
+                                <!-- Icon của nhà xuất bản -->
+                                <i class="fa-solid fa-building text-dark"></i>
+                            </div>
+                            <span class="ms-2 text-dark">Nhà Xuất Bản</span>
+                        </a>
+                        <a class="nav-link" href="@Url.Action("Index", "DonDatHangs")">
+                            <div class="icon-wrapper">
+                                <!-- Thay icon thành biểu tượng phù hợp với đơn hàng, ví dụ: fa-shopping-cart -->
+                                <i class="fa-solid fa-shopping-cart text-dark"></i>
+                            </div>
+                            <span class="ms-2 text-dark">Đơn Hàng</span>
+                        </a>
                     </div>
-               
+                </div>
+
             </nav>
         </div>
         <div id="layoutSidenav_content" class="scrollable-container">
@@ -183,10 +168,10 @@
             crossorigin="anonymous"></script>
     <script src="~/Scripts/js/scripts.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js"
-            crossorigin="anonymous">
-
-    </script>
+            crossorigin="anonymous"></script>
 
     <script src="~/Scripts/js/datatables-simple-demo.js"></script>
+    @RenderSection("scripts", required: false)
+
 </body>
 </html>

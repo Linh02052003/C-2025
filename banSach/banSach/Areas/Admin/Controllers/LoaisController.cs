@@ -15,6 +15,17 @@ namespace bansach.Areas.Admin.Controllers
     {
         private QLBanSachEntities db = new QLBanSachEntities();
 
+        public ActionResult ToggleStatus(string id)
+        {
+            var loai = db.Loais.Find(id);
+            if (loai != null)
+            {
+                loai.Status = loai.Status == 1 ? 0 : 1;
+                db.SaveChanges();
+            }
+            return RedirectToAction("Index");
+        }
+
         // GET: Admin/Loais
         public async Task<ActionResult> Index()
         {
@@ -47,7 +58,7 @@ namespace bansach.Areas.Admin.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Create([Bind(Include = "TenLoai")] Loai loai)
+        public async Task<ActionResult> Create([Bind(Include = "TenLoai,Status")] Loai loai)
         {
             if (ModelState.IsValid)
             {
@@ -63,9 +74,10 @@ namespace bansach.Areas.Admin.Controllers
                 }
 
                 loai.MaLoai = newMaLoai;
-
+                loai.Status = 1;
                 db.Loais.Add(loai);
                 await db.SaveChangesAsync();
+                TempData["Message"] = "Thêm loại sách thành công!";
                 return RedirectToAction("Index");
             }
 
@@ -92,14 +104,16 @@ namespace bansach.Areas.Admin.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Edit([Bind(Include = "MaLoai,TenLoai")] Loai loai)
+        public async Task<ActionResult> Edit([Bind(Include = "MaLoai,TenLoai,Status")] Loai loai)
         {
             if (ModelState.IsValid)
             {
                 db.Entry(loai).State = EntityState.Modified;
                 await db.SaveChangesAsync();
+                TempData["Message"] = "Cập nhật loại sách thành công!";
                 return RedirectToAction("Index");
             }
+            loai.Status = 1;
             return View(loai);
         }
 
@@ -126,6 +140,7 @@ namespace bansach.Areas.Admin.Controllers
             Loai loai = await db.Loais.FindAsync(id);
             db.Loais.Remove(loai);
             await db.SaveChangesAsync();
+            TempData["Message"] = "Xóa loại sách thành công!";
             return RedirectToAction("Index");
         }
 

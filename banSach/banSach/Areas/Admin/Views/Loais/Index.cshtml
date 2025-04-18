@@ -6,6 +6,24 @@
 }
 
 <main>
+    <div>
+        @if (TempData["SuccessMessage"] != null)
+        {
+            <div class="alert-box success" id="success-alert">
+                <span class="icon">✔</span>
+                <span>@TempData["SuccessMessage"]</span>
+                <button class="close-btn" onclick="this.parentElement.style.display='none';">×</button>
+            </div>
+        }
+        @if (TempData["ErrorMessage"] != null)
+        {
+            <div class="alert-box error" id="error-alert">
+                <span class="icon">✖</span>
+                <span>@TempData["ErrorMessage"]</span>
+                <button class="close-btn" onclick="this.parentElement.style.display='none';">×</button>
+            </div>
+        }
+    </div>
     <div class="container-fluid px-4">
         <br />
         <h2>Danh sách loại sách</h2>
@@ -32,6 +50,12 @@
                                 <td>@Html.DisplayFor(modelItem => item.TenLoai)</td>
                                 <td>
                                     <div class="d-flex">
+                                        <a href="@Url.Action("ToggleStatus", new { id = item.MaLoai })"
+                                           title="@(item.Status == 1 ? "Ẩn loại sách" : "Hiện loại sách")"
+                                           class="me-2"
+                                           style="color: @(item.Status == 1 ? "green" : "gray")">
+                                            <i class="fa fa-lg @(item.Status == 1 ? "fa-eye" : "fa-eye-slash")"></i>
+                                        </a>
                                         <a href="@Url.Action("Edit", new { id = item.MaLoai })" title="Sửa">
                                             <i class="fa-solid fa-lg fa-pen-to-square"></i>
                                         </a>

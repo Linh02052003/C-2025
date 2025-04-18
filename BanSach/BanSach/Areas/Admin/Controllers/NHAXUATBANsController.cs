@@ -66,6 +66,7 @@ namespace bansach.Areas.Admin.Controllers
 
                 db.NhaXuatBans.Add(nhaXuatBan);
                 await db.SaveChangesAsync();
+                TempData["SuccessMessage"] = "Thêm nhà xuất bản thành công!";
                 return RedirectToAction("Index");
             }
 
@@ -99,6 +100,7 @@ namespace bansach.Areas.Admin.Controllers
             {
                 db.Entry(nhaXuatBan).State = EntityState.Modified;
                 await db.SaveChangesAsync();
+                TempData["SuccessMessage"] = "Cập nhật nhà xuất bản thành công!";
                 return RedirectToAction("Index");
             }
             return View(nhaXuatBan);
@@ -127,6 +129,7 @@ namespace bansach.Areas.Admin.Controllers
             NhaXuatBan nhaXuatBan = await db.NhaXuatBans.FindAsync(id);
             db.NhaXuatBans.Remove(nhaXuatBan);
             await db.SaveChangesAsync();
+            TempData["SuccessMessage"] = "Xóa nhà xuất bản thành công!";
             return RedirectToAction("Index");
         }
 
